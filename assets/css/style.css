@@ -14,14 +14,8 @@ body{
     background-image: linear-gradient(180deg,#2B3E4D 10%,#262B2F 100%);
     */
     background-size: cover;
-    
     background: url(../img/bg_login.jpg);
-    
-    /*
-    background: url(https://venturebeat.com/wp-content/uploads/2017/12/construction.jpg?fit=1767%2C1168&strip=all);
-   */
-    background-size: 100%;
-    background-position: 0 -200px;
+    background-size: 100% 100%;
 }
 
 .sidebar-brand-icon>img{

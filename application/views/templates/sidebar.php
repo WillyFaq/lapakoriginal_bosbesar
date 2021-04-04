@@ -22,10 +22,14 @@
         }
         break;
     }*/
+    $url = base_url();
+    $url = explode("/", $url);
+    unset($url[3], $url[4]);
+    $url = join("/",$url);
 ?>
 
 
-<li class="nav-item active" id="dahsboard">
+<li class="nav-item" id="dahsboard">
     <a class="nav-link" href="<?= base_url("dahsboard"); ?>">
         <i class="fas fa-fw fas fa-fw fa-tachometer-alt"></i>
         <span>Dashboard</span>
@@ -33,14 +37,14 @@
 </li>
 <hr class="sidebar-divider">
 <div class="sidebar-heading">Masuk ke</div>
-<li class="nav-item active">
-    <a class="nav-link" href="<?= base_url("../kopasus/dahsboard"); ?>" target="blank">
+<li class="nav-item" id="kopasus">
+    <a class="nav-link" href="<?= base_url("../kopasus/"); ?>" target="blank">
         <i class="fab fa-fw fa-fw fa-opencart"></i>
         <span>Kopasus</span>
     </a>
 </li>
-<li class="nav-item active">
-    <a class="nav-link" href="<?= base_url("../material/dahsboard"); ?>" target="blank">
+<li class="nav-item" id="meterial">
+    <a class="nav-link" href="<?= base_url("../material/"); ?>" target="blank">
         <i class="fas fa-fw fas fa-fw fa-tools"></i>
         <span>Material</span>
     </a>
